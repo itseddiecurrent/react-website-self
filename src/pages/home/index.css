@@ -1,0 +1,26 @@
+.background {
+    border: 2px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+    background: linear-gradient(180deg, #6CC4F5 0%, rgba(207, 231, 245, 0.72) 100%);
+  
+}
+
+.about-me-content {
+    position: absolute;
+    width: 1133px;
+    height: 158px;
+    left: 107px;
+    top: 414px;
+
+    font-family: 'Jacques Francois';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #000000;
+    }
