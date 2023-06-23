@@ -1,6 +1,12 @@
 import React from 'react';
 import './index.css';
 import profilePicture from '../../assets/img/home/profile.jpg';
+import insIcon from '../../assets/img/home/instagram.png';
+import fbIcon from '../../assets/img/home/facebook.png';
+import githubIcon from '../../assets/img/home/github.png';
+import chesscomIcon from '../../assets/img/home/chesscom.png';
+import soundcloudIcon from '../../assets/img/home/soundcloud.png';
+import { Link } from 'react-router-dom';
 function HomePage() {
     return (
         
@@ -16,8 +22,7 @@ function HomePage() {
             }}>
                 <div className='home-icon' style={{
                     position: 'absolute',
-                    width: 'auto',
-                    height: 'auto',
+                    
                     left: '5.78%',
                     top: '28px',
 
@@ -31,7 +36,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Home
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
                 </div>
 
 
@@ -52,7 +59,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Profession
+                    <li>
+                        <Link to="/profession">Profession</Link>
+                    </li>
                 </div>
 
                 <div className='music-icon' style={{
@@ -72,7 +81,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Music
+                    <li>
+                        <Link to="/music">Music</Link>
+                    </li>
                 </div>
 
                 <div className='blog-icon' style={{
@@ -92,7 +103,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Blog
+                    <li>
+                        <Link to="/blog">Blog</Link>
+                    </li>
                 </div>
 
                 <div className='journey-icon' style={{
@@ -112,7 +125,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Journey
+                    <li>
+                        <Link to="/journey">Journey</Link>
+                    </li>
                 </div>
 
                 <div className='passion-icon' style={{
@@ -132,7 +147,9 @@ function HomePage() {
                     color: '#000000'
 
                 }}>
-                    Passion
+                    <li>
+                        <Link to="/passion">Passion</Link>
+                    </li>
                 </div>
 
             </div>
@@ -205,12 +222,106 @@ function HomePage() {
                 color: '#000000'
             }}>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum. ff
+                Welcome to my page! I am a software engineer, music performer, mystery novel lover, language nerd, 
+                chess enthusiast, and many more! I am always open to new things and always curious!
+
             </div>
+
+
+            <div className='follow-me' style = {{
+                position: 'absolute',
+                
+                left: '8.35%',
+                bottom: '144px',
+
+                fontFamily: 'Hubballi',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '24px',
+                lineHeight: '32px',
+
+                
+                color: '#000000'
+
+            }}>
+                Follow me on any platform you like!
+
+            </div>
+
+            <a href='https://www.instagram.com/itseddiecurrent/'>
+                <img className='ins-icon' src = {insIcon} style={{
+                    position: 'absolute',
+                
+                    left: '8.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+
+
+            <a href='https://www.facebook.com/edward.tang.1272/'>
+                <img className='fb-icon' src = {fbIcon} style={{
+                    position: 'absolute',
+                
+                    left: '17.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+
+            <a href='https://github.com/itseddiecurrent'>
+                <img className='github-icon' src = {githubIcon} style={{
+                    position: 'absolute',
+                
+                    left: '26.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+
+            <a href='https://www.chess.com/member/edkiddotang'>
+                <img className='chesscom-icon' src = {chesscomIcon} style={{
+                    position: 'absolute',
+                
+                    left: '35.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+
+
+            <a href='https://soundcloud.com/edward-tang-580370074'>
+                <img className='soundcloud-icon' src = {soundcloudIcon} style={{
+                    position: 'absolute',
+                
+                    left: '44.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+                
+                
+            
             
         </div>
     );
