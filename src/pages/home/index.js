@@ -6,6 +6,7 @@ import fbIcon from '../../assets/img/home/facebook.png';
 import githubIcon from '../../assets/img/home/github.png';
 import chesscomIcon from '../../assets/img/home/chesscom.png';
 import soundcloudIcon from '../../assets/img/home/soundcloud.png';
+import youtubeIcon from '../../assets/img/home/youtube.png';
 import { Link } from 'react-router-dom';
 function HomePage() {
     return (
@@ -176,39 +177,20 @@ function HomePage() {
             <div className="profile-picture" >
                 <img src={profilePicture} alt='' style={{ 
                     position: 'absolute',
-                    width: '18.9%', 
-                    height: 'auto', 
+                    width: '300px',
                     right: '40px',
                     top: '113px'
                 }}/>
           
             </div>
 
-            <div className='about-me' style = {{
-                position: 'relative',
-                width: '145px',
-                height: '42px',
-                left: '8.35%',
-                top: '151px',
-                
-                fontFamily: 'Jacques Francois',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '32px',
-                lineHeight: '42px',
-                textAlign: 'center',
-                
-                color: '#000000'
-                
-            }}>
-                About me
-            </div>
+            
 
             <div className='about-me-content' style={{
                 position: 'relative',
                
                 left: '8.35%',
-                top: '214px',
+                top: '145px',
 
                 width: '80%',
                 
@@ -224,6 +206,19 @@ function HomePage() {
 
                 Welcome to my page! I am a software engineer, music performer, mystery novel lover, language nerd, 
                 chess enthusiast, and many more! I am always open to new things and always curious!
+
+
+                <h2>Biography</h2>
+
+                I hold a Master's degree in Bioinformatics from the University of Illinois, and previously an undergraduate degree
+                in Mathematics from the same institution. I now work full-time as a software engineer, with a focus on backend with 
+                Java(Spring framework), Python(Flask, Django) and Javascript(Node.js).
+
+                I am an experienced music performer as well, I have played in bands as lead singer, bassist, keyboardist and 
+                guitarist, and I also like playing acoustic original/covers with my guitar. 
+
+                Recently, I have been developing my interest in outdoor activities and travelling. Check my blogs for my attempted
+                adventures! 
 
             </div>
 
@@ -311,6 +306,20 @@ function HomePage() {
                     position: 'absolute',
                 
                     left: '44.35%',
+                    bottom: '64px',
+
+                    width: '57px',
+                    height: '57px'
+
+
+                }}/>
+            </a>
+
+            <a href='https://www.youtube.com/channel/UCk0QlXdeDcvBp11AdAuN_kQ'>
+                <img className='youtube-icon' src = {youtubeIcon} style={{
+                    position: 'absolute',
+                
+                    left: '53.35%',
                     bottom: '64px',
 
                     width: '57px',

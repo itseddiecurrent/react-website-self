@@ -161,6 +161,28 @@ function ProfessionPage() {
                     Profession
                 </div>
 
+                <div className='profession-content1' style={{
+                position: 'relative',
+               
+                left: '6.48%',
+                top: '251px',
+
+                width: '80%',
+                
+                fontFamily: 'Jacques Francois',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '24px',
+                lineHeight: '32px',
+
+                
+                color: '#000000'
+            }}>
+                Hello
+            </div>
+
+
+
 
 
 
